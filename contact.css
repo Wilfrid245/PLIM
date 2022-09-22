@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+* {
+    font-family: 'Poppins' sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+:root {
+    --background-color: #000000;
+    --main-color: #000fde;
+    --text-color: #ffffff;
+    --hover-color: #f1ebea;
+}
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+.sidebar {
+    background: var(--main-color);
+    height: 100%;
+    width: 500px;
+    float: right;
+    margin-top: -70px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+
+}
+.navbar {
+	display: flex;
+	column-gap: 5rem;
+}
+.navbar li {
+	position: relative;
+    text-decoration: none;
+    margin-top: 10px;
+    list-style-type: none;
+}
+.navbar a {
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--text-color);
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: var(--hover-color);
+}
+.navbar a::after {
+	content: '';
+	width: 0;
+	height: 2px;
+	background: var(--text-color);
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	transition: 0.4s all linear;
+    color: var(--hover-color);
+}
+.navbar a:hover:after {
+    background: var(--hover-color);
+}
+.navbar a:hover::after,
+.navbar .home-active::after {
+	width: 100%;
+	transition: 0.2s;
+    color: var(--hover-color);
+}
+.last {
+    color: var(--text-color);
+}
+.last h2 {
+    margin-top: 250px;
+    margin-left: -40px;
+    padding-left: 50px;
+}
+.footer {
+    background: var(--main-color);
+    color: var(--text-color);
+    margin-top: 250px;
+    font-family: 'Poppins' sans-serif;
+}
+.footer {
+    background: var(--main-color);
+    color: var(--text-color);
+    margin-top: 250px;
+    font-family: 'Poppins' sans-serif;
+}
+footer {
+    opacity: 0.75;
+    font-size: 20px;
+    text-align: center;
+}
+h1 {
+    color: var(--main-color);
+    margin-top: 70px;
+    margin-bottom: -50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Poppins' sans-serif;
+}
+.contact {
+    color: var(--text-color);
+    margin-top: 100px;
+    margin-left: 70px;
+    font-size: 25px;
+    justify-content: space-around;
+}
+.contact span {
+    color: var(--main-color);
+}
+.contact p {
+    margin: 10px;
+}
+.contact i {
+    color: var(--main-color);
+    opacity: 100%;
+}
+.contact button {
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-size: 20px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+.contact a {
+    text-decoration: none;
+}
